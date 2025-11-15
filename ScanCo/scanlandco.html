@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scanland & Co</title>
+  <link rel="stylesheet" href="assets/scanlandco.css">
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#F5C16C">
+  
+  <!-- Theme colors -->
+  <meta name="msapplication-TileColor" content="#123945">
+  <meta name="theme-color" content="#123945">
+</head>
+<body>
+  <main>
+    <!-- Header -->
+    <header class="main-header">
+      <img src="assets/scanlandco.png" alt="Scanland & Co Logo" class="logo">
+      <h1>Scanland & Co</h1>
+      
+      <div class="mission-box">
+        <p>Building a portfolio of impact-driven ventures with<br>bold ideas, strong leadership, and real-world solutions<br>that strengthen communities.</p>
+      </div>
+    </header>
+
+    <!-- Our Family of Companies -->
+    <section class="portfolio-section">
+      <div class="section-header">
+        <h2>Our Family of Companies</h2>
+      </div>
+      
+      <div class="companies-grid">
+        <a href="https://thescanlandgroup.com" target="_blank" class="company-card">
+          <h3>The Scanland Group</h3>
+          <p>Strategic leadership and organizational development</p>
+        </a>
+        
+        <a href="https://jubileecoffeeandtea.com" target="_blank" class="company-card">
+          <h3>Jubilee Coffee & Tea</h3>
+          <p>Premium coffee and tea</p>
+        </a>
+        
+        <a href="https://scanlandconsulting.com" target="_blank" class="company-card">
+          <h3>Scanland Consulting</h3>
+          <p>Professional business consulting services</p>
+        </a>
+        
+        <a href="https://districtforgesolutions.com" target="_blank" class="company-card">
+          <h3>DistrictForge Solutions</h3>
+          <p>Community-focused management and development</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Our Podcasts -->
+    <section class="portfolio-section">
+      <div class="section-header">
+        <h2>Our Podcasts</h2>
+      </div>
+      
+      <div class="podcasts-grid">
+        <a href="https://missiondrivenpod.com" target="_blank" class="podcast-card">
+          <h3>Mission-Driven Momentum</h3>
+          <p>Leadership insights and organizational transformation</p>
+        </a>
+        
+        <a href="https://forgottengrandstands.com" target="_blank" class="podcast-card">
+          <h3>Forgotten Grandstands</h3>
+          <p>Sports history and untold stories</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Our Solutions -->
+    <section class="portfolio-section">
+      <div class="section-header">
+        <h2>Our Solutions</h2>
+      </div>
+      
+      <div class="solutions-grid">
+        <a href="https://cms.scanland.org" target="_blank" class="solution-card">
+          <h3>Scanland CMS</h3>
+          <p>Visual content management for websites</p>
+        </a>
+        
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="contact-panel">
+        <div class="contact-trigger">
+          <span>Contact<br>Scanland & Co</span>
+          <div class="triangle"></div>
+        </div>
+      </div>
+
+      <div class="contact-body">
+        <form action="https://formspree.io/f/mldbvrrn" method="POST">
+          <input type="hidden" name="Note" value="This message was sent from Scanland & Co">
+          <input type="text" name="Name" placeholder="Name" required/>
+          <input type="email" name="Email" placeholder="Email" required/>
+          <input type="text" name="Subject" placeholder="Subject" required/>
+          <textarea name="Message" placeholder="Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Social Media -->
+    <div class="social-box">
+      <h3>Connect with Us</h3>
+      <ul class="social-list">
+        <li>
+          <a href="https://linkedin.com/company/scanlandco" target="_blank" aria-label="LinkedIn">
+            <img src="assets/linkedin.png" alt="LinkedIn logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/scanland_and_co" target="_blank" aria-label="Instagram">
+            <img src="assets/instagram.png" alt="Instagram logo">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script>
+    document.querySelector('.contact-trigger').addEventListener('click', () => {
+      document.querySelector('.contact-section').classList.toggle('open');
+    });
+  </script>
+  <script src="https://cms.scanland.org/cms.js"></script>
+</body>
+</html>
